@@ -1,0 +1,25 @@
+package Democlasses;
+
+import org.testng.annotations.Test;
+
+public class Demotwo {
+
+
+	int a = 4;
+	int b = 7;	
+    int c = 8;
+
+	@Test
+	public void testone() {
+		if (a > b) {
+			System.out.println("A is greater than B");
+		} else {
+			System.out.println("B is greater than A");
+		}
+	}
+	
+	public void testtwo() {
+		
+	}
+
+}

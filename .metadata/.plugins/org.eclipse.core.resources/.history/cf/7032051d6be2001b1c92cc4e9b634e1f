@@ -1,0 +1,18 @@
+package Democlasses;
+
+public class Demotwo {
+	
+	
+	int a = 4;
+    int b = 7;	
+	
+	
+	
+	public void testone() {
+		if (a > b) {
+			System.out.println("A is greater than B");
+		}
+		
+	}
+
+}

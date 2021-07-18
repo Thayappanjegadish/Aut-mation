@@ -1,0 +1,24 @@
+package Democlasses;
+
+import org.testng.annotations.Test;
+
+public class Demothree {
+	
+	
+	@Test
+	public void weblogin() {
+		System.out.println("Logged into website successfully");
+	}
+	
+	public void webtwo() {
+		int x = 8;
+		int y = 9;
+		
+	}
+	
+	@Test
+	public void APIlogin() {
+		System.out.println("Verified login API using postman");
+	}
+
+}

@@ -1,0 +1,14 @@
+package Democlasses;
+
+public class Demothree {
+	
+	
+	public void weblogin() {
+		System.out.println("Logged into website successfully");
+	}
+	
+	public void APIlogin() {
+		System.out.println("Verified login API using postman");
+	}
+
+}
