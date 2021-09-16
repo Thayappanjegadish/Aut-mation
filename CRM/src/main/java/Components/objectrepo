@@ -1,0 +1,64 @@
+package Components;
+
+import java.util.ArrayList;
+import java.util.TimerTask;
+
+import javax.management.timer.Timer;
+
+//import java.util.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import drivers.baseclass;
+
+public class objectrepo extends baseclass {
+
+
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+
+
+	public objectrepo() {
+
+	}
+	
+	
+	
+	
+	public objectrepo stepone() {
+		driver.findElement(By.xpath("//input[@title='Draw a line']")).click();
+//		driver.findElement(By.xpath("//canvas[@id='imageView']")).dr
+//		Thread.sleep(1000);
+		Actions action = new Actions(driver);
+		WebElement element = driver.findElement(By.xpath("//canvas[@id='imageView']"));
+//		action.moveToElement(element)
+		action.moveToElement(element, 20, 30).build().perform();
+		driver.findElement(By.xpath("//input[@title='Draw a rectangle']")).click();
+//		action.contextClick(element);
+		action.moveToElement(element);
+		driver.findElement(By.xpath("//input[@title='Use eraser']")).click();
+		return this;
+	}
+	
+	public objectrepo steptwo() {
+		
+		return this;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+}
