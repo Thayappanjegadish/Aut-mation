@@ -32,14 +32,14 @@ public class objectrepo extends baseclass {
 	
 	public objectrepo stepone() {
 		driver.findElement(By.xpath("//input[@title='Draw a line']")).click();
-//		driver.findElement(By.xpath("//canvas[@id='imageView']")).dr
-//		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		WebElement element = driver.findElement(By.xpath("//canvas[@id='imageView']"));
-//		action.moveToElement(element)
+		WebElement element = driver.findElement(By.xpath("//canvas[@id='imageTemp']"));
 		action.moveToElement(element, 20, 30).build().perform();
+		driver.findElement(By.xpath("//input[@title='Draw a line']")).click();
+		action.moveToElement(element, 10, 40).build().perform();
+		WebElement From= driver.findElement(By.xpath("//input[@title='Draw a rectangle']"));
+		action.dragAndDrop(From, element);
 		driver.findElement(By.xpath("//input[@title='Draw a rectangle']")).click();
-//		action.contextClick(element);
 		action.moveToElement(element);
 		driver.findElement(By.xpath("//input[@title='Use eraser']")).click();
 		return this;
